@@ -21,14 +21,16 @@
     <meta name="twitter:description"
         content="Support animal rescue efforts in Camarines Sur through donations, adoptions, and education." />
     <!-- <meta name="twitter:image" content="https://yourdomain.com/assets/images/social-preview.jpg" /> -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/src/output.css" />
+    <!-- <link rel="icon" href="/favicon.ico" type="image/x-icon" /> -->
+    <link rel="stylesheet" href="./src/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body class="font-inter">
@@ -36,7 +38,7 @@
     <nav class="bg-white shadow-lg fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center py-6">
-                <div class="text-xl font-bold text-home-green">Home4Paws</div>
+                <div class="text-xl font-bold text-[#718a47]">Home4Paws</div>
                 <div class="md:hidden">
                     <button id="menu-button" class="text-gray-800 focus:outline-none">
                         <!-- Hamburger icon -->
@@ -50,16 +52,16 @@
                 <ul id="nav-links"
                     class="hidden md:flex space-x-8 flex-col md:flex-row absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent px-4 md:px-0 shadow-md md:shadow-none">
                     <li>
-                        <a href="#home" class="block py-2 md:py-0 hover:text-home-green transition">Home</a>
+                        <a href="#home" class="block py-2 md:py-0 hover:text-[#718a47] transition">Home</a>
                     </li>
                     <li>
-                        <a href="#about" class="block py-2 md:py-0 hover:text-home-green transition">About</a>
+                        <a href="#about" class="block py-2 md:py-0 hover:text-[#718a47] transition">About</a>
                     </li>
                     <li>
-                        <a href="#animals" class="block py-2 md:py-0 hover:text-home-green transition">Animals</a>
+                        <a href="#animals" class="block py-2 md:py-0 hover:text-[#718a47] transition">Animals</a>
                     </li>
                     <li>
-                        <a href="#donate" class="block py-2 md:py-0 hover:text-home-green transition">Donate</a>
+                        <a href="#donate" class="block py-2 md:py-0 hover:text-[#718a47] transition">Donate</a>
                     </li>
                 </ul>
             </div>
@@ -70,7 +72,7 @@
     <section id="home"
         class="bg-[url('../assets/images/hero-banner.png')] bg-cover bg-center h-screen flex items-center justify-start text-white">
         <div class="max-w-7xl mx-auto px-4 py-20 text-center">
-            <h1 class="text-8xl font-bold mb-4 leading-none">
+            <h1 class="text-7xl font-bold mb-4 leading-none">
                 Hope for Paws serve to protect Animals
             </h1>
             <p class="text-xl mb-8">
@@ -81,15 +83,15 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 ">
+    <section id="about" class="py-20 lg:py-0 min-h-[70dvh] grid place-content-center bg-gray-50">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-4xl md:text-5xl font-bold text-center text-home-green mb-12">
+            <h2 class="text-4xl md:text-5xl font-bold text-[#718a47] mb-12">
                 About Us
             </h2>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                     <p class="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
-                        <strong class="text-home-green">Home4Paws</strong> is a dedicated
+                        <strong class="text-[#718a47]">Home4Paws</strong> is a dedicated
                         animal rescue organization based in Camarines Sur (4402). We focus
                         on spay/neuter programs to control pet overpopulation, organize
                         adoption drives to find loving homes, and rescue animals from the
@@ -103,34 +105,34 @@
                 </div>
 
                 <!-- Mission Card -->
-                <div class="bg-white shadow-md border-l-4 border-home-green p-8 rounded-lg">
-                    <h3 class="text-2xl font-semibold text-home-green mb-4">
+                <div class="bg-white shadow-md border-l-4 border-[#718a47] p-8 rounded-lg">
+                    <h3 class="text-2xl font-semibold text-[#718a47] mb-4">
                         Our Mission
                     </h3>
                     <ul class="space-y-4 text-gray-700">
                         <li class="flex items-start">
-                            <svg class="w-6 h-6 text-home-green mr-3 mt-1" fill="none" stroke="currentColor"
+                            <svg class="w-6 h-6 text-[#718a47] mr-3 mt-1" fill="none" stroke="currentColor"
                                 stroke-width="2" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                             </svg>
                             Promote spay/neuter awareness
                         </li>
                         <li class="flex items-start">
-                            <svg class="w-6 h-6 text-home-green mr-3 mt-1" fill="none" stroke="currentColor"
+                            <svg class="w-6 h-6 text-[#718a47] mr-3 mt-1" fill="none" stroke="currentColor"
                                 stroke-width="2" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                             </svg>
                             Host adoption events
                         </li>
                         <li class="flex items-start">
-                            <svg class="w-6 h-6 text-home-green mr-3 mt-1" fill="none" stroke="currentColor"
+                            <svg class="w-6 h-6 text-[#718a47] mr-3 mt-1" fill="none" stroke="currentColor"
                                 stroke-width="2" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                             </svg>
                             Rescue and rehabilitate animals
                         </li>
                         <li class="flex items-start">
-                            <svg class="w-6 h-6 text-home-green mr-3 mt-1" fill="none" stroke="currentColor"
+                            <svg class="w-6 h-6 text-[#718a47] mr-3 mt-1" fill="none" stroke="currentColor"
                                 stroke-width="2" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                             </svg>
@@ -142,18 +144,15 @@
         </div>
     </section>
 
-    <!-- gallery (rescued animals) -->
-    <?php include './components/gallery.php'; ?>
-
     <!-- adopt animals -->
     <?php include './components/adopt.php'; ?>
 
+    <!-- gallery (rescued animals) -->
+    <?php include './components/gallery.php'; ?>
 
-    <!-- Our Animals Section -->
-    <?php include './components/animals.php'; ?>
 
     <!-- Donate Section -->
-    <section id="donate" class="py-20 bg-home-green text-white">
+    <section id="donate" class="py-20 bg-[#718a47] text-white">
         <div class="max-w-5xl mx-auto px-6 text-center">
             <h2 class="text-4xl font-bold mb-6">Support Our Cause</h2>
             <p class="text-base mb-12 max-w-3xl mx-auto">
@@ -194,7 +193,7 @@
             <!-- CTA Button -->
             <div class="mt-12">
                 <a href="https://www.facebook.com/messages/t/315034048360145" target="_blank"
-                    class="inline-block bg-white text-home-green font-semibold px-6 py-3 rounded hover:bg-gray-100 transition">
+                    class="inline-block bg-white text-[#718a47] font-semibold px-6 py-3 rounded hover:bg-gray-100 transition">
                     Contact Us for More Info
                 </a>
             </div>
