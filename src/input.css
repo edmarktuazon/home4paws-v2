@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --color-home-green: #718a47;
+  --color-home-green-dark: #5a6f37;
+  --font-inter: "Inter", sans-serif;
+  --text-hero-size: clamp(2.75rem, 1.4397rem + 6.5517vw, 5.125rem);
+}
