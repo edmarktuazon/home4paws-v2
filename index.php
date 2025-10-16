@@ -17,14 +17,11 @@ $path = explode("/", rtrim($path, "/"));
 
 // (B) LOAD REQUESTED PAGE ACCORDINGLY
 // (B1) FOR "SINGLE SEGMENT" PATH
-// E.G. http://steelasoa.com/ > [""] > index.html
-// E.G. http://steelasoa.com/foo/ > ["foo"] > foo.html
 if (count($path)==1) { 
   $file = $path[0]=="" ? "home.php" : $path[0] . ".php"; 
 }
 
 // (B2) FOR "MULTI-SEGMENT" PATH
-// E.G. http://steelasoa.com/foo/bar/ > ["foo", "bar"] > foo-bar.html
 else { 
   $file = implode($path, "-") . ".php"; 
 }
@@ -36,4 +33,5 @@ if (file_exists($file)) { require $file; }
 else {
   http_response_code(404);
   require $folder . "404.php";
+
 }
